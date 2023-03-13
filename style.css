@@ -41,3 +41,78 @@ DIV {
 	height:50px;
 	border: 1px solid gray;
 }
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Serif Display', serif;
+}
+
+.button-container {
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.button {
+	appearance: none;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	
+	padding: 20px 40px;
+	border-radius: 8px;
+	color: #212121;
+	font-size: 28px;
+	font-weight: 300;
+	margin: 0 15px;
+	transition: 0.45s;
+}
+
+.button-1 {
+	color: #212121;
+	border: 3px solid #212121;
+}
+
+.button-1:hover {
+	color: #FFF;
+	background-color: #212121;
+}
+	
+.button-2 {
+	position: relative;
+}
+
+.button-2:after,.button-2:before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	transition: all 0.45s, opacity 0.1s 0.45s;
+	opacity: 0;
+}
+
+.button-2:after {
+	bottom: 0;
+	right: 0;
+	border-bottom: 3px solid #212121;
+	border-right: 3px solid #212121;
+}
+
+.button-2:before {
+	top: 0;
+	left: 0;
+	border-left: 3px solid #212121;
+	border-top: 3px solid #212121;
+}
+
+.button-2:hover:after, .button-2:hover:before {
+	width: calc(100% - 3px);
+	height: calc(100% - 3px);
+	transition: 0.45s, opacity 0.1s;
+	opacity: 1;
+}
