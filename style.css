@@ -21,27 +21,6 @@ DIV {
 	margin-right: auto;
 }
 
-#Footer {
-	width: 802px;
-	margin-right: auto;
-	margin-left: auto;
-	height: 50px;
-}
-
-#FooterLeft {
-	float:left;
-	width:49.5%;
-	height:50px;
-	border: 1px solid green;
-}
-
-#FooterRight {
-	float:right;
-	width:49.5%;
-	height:50px;
-	border: 1px solid gray;
-}
-
 * {
 	margin: 0;
 	padding: 0;
@@ -115,4 +94,25 @@ DIV {
 	height: calc(100% - 3px);
 	transition: 0.45s, opacity 0.1s;
 	opacity: 1;
+}
+
+#Footer {
+	width: 802px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 50px;
+}
+
+#FooterLeft {
+	float:left;
+	width:49.5%;
+	height:50px;
+	border: 1px solid green;
+}
+
+#FooterRight {
+	float:right;
+	width:49.5%;
+	height:50px;
+	border: 1px solid gray;
 }
